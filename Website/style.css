@@ -1,0 +1,473 @@
+* {
+    box-sizing: border-box;
+}
+
+/** Breakpoint: 576px+ */
+@media (min-width: 36em) {}
+
+/** Breakpoint: 768px+ */
+@media (min-width: 48em) {}
+
+/** Breakpoint: 992px+ */
+@media (min-width: 62em) {}
+
+/** Breakpoint: 1200px+ */
+@media (min-width: 75em) {}
+
+/** Breakpoint: 1400px+ */
+@media (min-width: 87.5em) {}
+
+html {
+    font-size: 1em;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+@media (min-width: 62em) {
+    .container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 5rem;
+    }
+}
+.button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 9999999px;
+    border: none;
+    background-color: #ED6A4E;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.text-primary {
+    color: #c95f47;
+}
+
+.button:hover {
+    text-decoration: underline;
+    background-color: #c95f47;
+}
+
+.button_primary:hover {
+    background-color: #015167;
+}
+
+.button_primary {
+    background-color: #014153;
+}
+
+.button-transparent {
+    backdrop-filter: blur(0.5rem);
+    background-color: transparent;
+    border: 0.125rem solid white;
+}
+
+.button-transparent:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+input.form_input [type="text"],
+input.form_input [type="email"],
+input.form_input [type="password"],
+textarea.form_input 
+{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.form_input{
+    margin: 0;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    background-color: white;
+    border: 0.125rem solid white;
+    border-radius: 0.5rem;
+    width: 17rem;
+}
+
+.form_input:focus{
+    border: 0.125rem solid gray;
+    outline: none;
+}
+
+.form_input-container {
+    padding-bottom: 0.7rem;
+    text-align: center;
+}
+
+.form_input-textarea {
+    height: 6rems;
+}
+
+.header {
+    padding-bottom: 8rem;
+   background: url(../Images/Kir.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 50% 50%;
+}
+
+@media (min-width: 62em) {
+    .header {
+        background-image: url(..//Images/Kir-05x.jpg);
+    }
+}
+
+.header_logo-link {
+    display: block;
+    width: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (min-width: 62em) {
+    .header_logo-link{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.header_logo { 
+    width: 100%;
+    filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5) );
+}
+
+.header_nav-ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header_nav-li {
+    display: inline-block;
+    list-style-type: none;
+}
+.header_nav-li-desktop-only{
+    display: none;
+}
+@media (min-width: 62em) {
+    .header_nav-li-desktop-only {
+        display: inline-block;
+    }
+}
+ .header_nav-link {
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+ }
+
+ .header_nav {
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+ }
+
+ @media (min-width: 62em) {
+    .header_nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+ }
+
+ .header_heading{
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+ }
+@media (min-width: 36em) {
+    .header_heading{
+        font-size: 3rem;
+    }
+}
+@media (min-width: 62em) {
+         .header_heading {
+            padding-top: 5rem;
+         }
+        }
+
+ .header_sub-heading {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+ }
+@media (min-width: 36em){
+    .header_sub-heading {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 62em){
+    .header_sub-heading{
+        padding-bottom: 5rem;
+    }
+}
+
+ .header_button-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+ }
+
+ @media (min-width: 62em){
+    .header_button-container{
+        display: none;
+    }
+ }
+
+ .heading{
+    color: #014153;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 2rem 0;
+ }
+
+.heading-white{
+    color: white;
+}
+
+.header-top-box::before {
+    content: "";
+    display: block;
+    height: 0.125rem;
+    width: 7.5rem;
+    background-color: yellow;
+    margin-bottom: 2rem;
+}
+
+ .heading-centered {
+    text-align: center;
+
+ }
+
+ .heading_pre-text {
+    display: block;
+    font-size: 1.5rem;
+ }
+
+ .adventures {
+    background-color: rgb(225, 220, 206);
+    padding-bottom: 8rem;
+    /*
+    background-image: url(../Images/H972.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    */
+ }
+
+ .adventures_card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: -1rem;
+ }
+
+ .adventures_card{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    flex: 0 0 22.333333rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    padding-bottom: 1.5rem;
+    box-shadow: 0 0.5rem 1rem black;
+    transition: transform 0.25s ease-in-out;
+ }
+
+.adventures_card:hover{
+    transform: scale(1.05);
+}
+
+ .adventures_card-img{
+    width: 100%;
+    display: block;
+ }
+
+ .adventures_card-heading{
+    padding-top: 1.25rem;
+    margin: 0;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #014153;
+    text-transform: uppercase;
+    text-align: center;
+ }
+
+ .adventures_card-date{
+    color: #014153;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-size: 1.25rem;
+    margin: 0;
+ }
+ 
+ .story{
+    background-image: url(..//Images/kirgistan-tadschikistan-8575.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+ }
+
+ @media (min-width: 62em){
+    .story {
+        background-image: url(../Images/kirgistan-tadschikistan-8575.jpg);
+        background-size: 110% auto;
+        background-position: 100% 50%;
+        background-attachment: fixed;
+    }
+ }
+
+ .story_paragraph {
+    margin: 0;
+    font-size: 1.25rem;
+    color: white;
+    padding-bottom: 1.2rem;
+    line-height: 1.7em;
+ }
+
+
+ .video_text {
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+
+ }
+
+ .video {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+ }
+
+ @media (min-width: 62em){
+    .adventures {
+        background-repeat: no-repeat;
+      padding-bottom: 2rem;
+        padding-top: 2rem;
+     }
+    }
+
+.contact {
+    background-color: #ED6A4E;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.contact_logo {
+    width: 20rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact_cta {
+    margin: 0;
+    font-weight: normal;
+    padding-top: 1;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.contact_phone {
+    display: inline-block;
+    color: #014153;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: 2.5rem;
+}
+
+.contact_phone-container{
+    text-align: center;
+}
+
+.contact_info::after{
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 0.25rem;
+    background-color: #015167;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 62em) {
+    .contact_info::after{
+        display: none;
+    }
+}
+
+@media (min-width: 62em){
+    .adventures_video{
+        width: 600;
+        height: 300;
+    }
+}
+
+.container_video {
+    width: 20rem;
+    height: 10rem;
+}
+
+@media (min-width: 62em){
+    .container_video {
+        width: 60rem;
+        height: 40rem;
+    }
+}
+
+ .video_bottom{
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem ;
+    text-align: center;
+}
+
+@media (min-width: 62em){
+    .video_bottom{
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+}
